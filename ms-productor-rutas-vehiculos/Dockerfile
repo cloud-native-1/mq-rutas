@@ -20,10 +20,10 @@ WORKDIR /app
 
 #WORKDIR /app/file_system
 
-#COPY --from=builder /app/target/*.jar app.jar
-
 # Copia el JAR de tu microservicio (asegúrate que el nombre coincida)
-COPY src/main/resources/wallet /app/wallet
+COPY --from=builder /app/target/*.jar app.jar
+
+#COPY src/main/resources/wallet /app/wallet
 #
 ## Variables entorno
 #ENV WALLET_TNS="/app/wallet"
