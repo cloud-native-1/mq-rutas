@@ -3,7 +3,7 @@ FROM eclipse-temurin:21-jdk AS builder
 
 WORKDIR /app
 
-COPY ../ms-consumidor-rutas-vehiculos .
+COPY . .
 
 RUN (command -v dos2unix >/dev/null 2>&1 && dos2unix mvnw) || sed -i 's/\r$//' mvnw \
     && chmod +x mvnw \
