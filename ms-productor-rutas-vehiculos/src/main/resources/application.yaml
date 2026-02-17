@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms-productor-rutas-vehiculos
+  rabbitmq:
+    host: rabbit.eastus2.cloudapp.azure.com
+    port: 5672
+    username: admin
+    password: admin123

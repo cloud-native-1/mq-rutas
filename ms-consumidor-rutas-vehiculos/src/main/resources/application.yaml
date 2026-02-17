@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ms-consumidor-rutas-vehiculos
+  rabbitmq:
+    host: rabbit.eastus2.cloudapp.azure.com
+    port: 5672
+    username: admin
+    password: admin123
+
+path:
+  file:
+    system: ${PATH_FILE_SYSTEM}
+
