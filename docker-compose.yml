@@ -12,7 +12,7 @@ services:
       - app-network
 
   mq-consumidor-rutas:
-    container_name: consumudor-rutas
+    container_name: consumidor-rutas
     build:
       context: ./ms-consumidor-rutas-vehiculos
       dockerfile: Dockerfile
